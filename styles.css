@@ -30,6 +30,8 @@ body {
 
 .search-bar {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 #pokemonName {
@@ -56,6 +58,22 @@ body {
   color: white;
 }
 
+#random-button {
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#random-button:hover {
+  background-color: yellow;
+  color: white;
+}
+
 .pokemon-details {
   background-color: #ffffff;
   border-radius: 10px;
@@ -64,8 +82,8 @@ body {
 }
 
 .pokemon-details img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .pokemon-details h2 {
@@ -75,4 +93,25 @@ body {
 
 .pokemon-details p {
   margin: 5px 0;
+}
+
+.evolution-title {
+  margin-top: 30px;
+}
+.evolution-container {
+  display: flex;
+  justify-content: center;
+}
+
+.evolution-stage {
+  text-align: center;
+}
+
+.evolution-stage img {
+  width: 100px;
+  height: 100px;
+}
+
+.evolution-stage p {
+  font-size: 1.1em;
 }
