@@ -21,6 +21,9 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 .title {
@@ -84,6 +87,25 @@ body {
 .pokemon-details img {
   width: 200px;
   height: 200px;
+}
+
+.pokemon-details button {
+  display: flex;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.pokemon-details button:hover {
+  background-color: orange;
 }
 
 .pokemon-details h2 {
