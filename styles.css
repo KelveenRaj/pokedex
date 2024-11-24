@@ -23,7 +23,8 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .title {
@@ -77,11 +78,27 @@ body {
   color: white;
 }
 
+#favorite-button {
+  padding: 10px;
+  border: none;
+  background-color: pink;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#favorite-button:hover {
+  background-color: white;
+}
+
 .pokemon-details {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
   color: black;
+  height: 100%;;
+  overflow-y: auto;
+  max-height: calc(90vh - 170px);
 }
 
 .pokemon-details img {
@@ -136,4 +153,11 @@ body {
 
 .evolution-stage p {
   font-size: 1.1em;
+}
+
+.favorite-pokemon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
 }
